@@ -1,0 +1,276 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* womens collection */
+
+.bannerBox {
+    margin: 10px 0px;
+}
+
+.bannerBox img {
+    width: 100%;
+    
+}
+.LadiesImages{
+    display:flex; 
+    justify-content: space-evenly;
+    margin:20px 20px;
+   
+
+}
+.LadiesImages img{
+  width: 200px;
+    height: 200px;
+    
+}
+.dis{
+    display: block;
+    border: 1px solid whitesmoke;
+    box-shadow: 1px 1px 1px rgba(245, 245, 245, 0.537);
+    padding:10px 10px;
+}
+.dis :hover{
+    opacity: 0.7;
+    background-color: whitesmoke;
+
+}
+.shopimg img{
+  width:100%;
+
+}
+/* form  */
+
+
+body {
+  font-family: 'Segoe UI';
+  
+  margin: 0;
+  padding: 0;
+}
+
+.student-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color:PINK;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 5px;
+}
+
+.student-form h2 {
+  margin-bottom: 25px;
+  color:black;
+  text-align : center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color:rgba(0, 0, 255, 0.712);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.submit-btn:hover {
+  background-color:blue;
+}
+/* footer */
+.Lastpart
+{
+  margin: 20;
+  padding: 20;
+  background-color: #e26ee0;
+  display:flex;
+  justify-content: space-around;
+  font-size: 20px;
+  color: black;
+  
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e26ee0;
+  padding: 40px 20px;
+  position: relative;
+  
+}
+
+/* Logo left side */
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+}
+.logo img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+;
+  
+}
+/* Center nav */
+.nav-links {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5rem;
+  list-style: none; /* remove bullets */
+  margin: 0;
+ 
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-links li a:hover {
+  text-decoration: none;
+}
+
+/* Hamburger menu toggle (3 spans) */
+.menu-toggle {
+  display: none;
+  flex-direction:column;
+  justify-content: space-between;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  background: white;
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
+ .b1{
+    background-color: #e26ee0;
+     padding:10px;
+  }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links in mobile by default */
+    position: absolute;
+    top:75px;
+    left: auto;
+    right: auto;
+    background:violet;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 2rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .LadiesImages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px
+  }
+
+  .LadiesImages img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .student-form {
+    padding: 20px;
+    margin: 20px;
+  }
+   .b1{
+    background-color: #e26ee0;
+     padding:10px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .LadiesImages img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .student-form {
+    padding: 15px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+  .b1{
+    background-color: #e26ee0;
+    padding:10px;
+  }
+}
+
+
+
+
+
+
