@@ -41,7 +41,7 @@ function App (){
 
    <Routes>
     {/* <Route path="/" element={<HomePage/>}/> */}
-     <Route path="/Shop" element={
+     <Route path="/" element={
        <>
        < Shop/>
          <WomenCollection ladiesFashion={ladiesFashion} />
@@ -52,7 +52,16 @@ function App (){
       </>
     }/> 
      
-    
+     <Route path="/Shop" element={
+       <>
+       < Shop/>
+         <WomenCollection ladiesFashion={ladiesFashion} />
+         <MenCollection menFashion={menFashion} />
+         <KidCollection kidFashion={kidFashion} />
+         <Form/>
+      
+      </>
+    }/>
      <Route path="/women" element={<WomenCollection ladiesFashion={ladiesFashion} />} />
      <Route path="/men" element={<MenCollection menFashion={menFashion} />} />
      <Route path="/kids" element={<KidCollection kidFashion={kidFashion} />} />
